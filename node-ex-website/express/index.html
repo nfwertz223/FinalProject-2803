@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>W3.CSS Template</title>
+<title>Impossible Game</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
+<link rel="stylesheet" href="login.css" type="text/css"/>
+<script src="regist.js"></script>
     <body>
-
+        <div class="login-page">
+            <div class="form">
+              <form class="login-form">
+                <input type="text" id="user" placeholder="Username"/>
+                <input type="password" id="pass" placeholder="Password"/>
+                <button onclick="loginVerif(getElementById('user').value, getElementById('pass').value)">login</button>
+                <p class="message">Not registered? <a href="regist.html">Create an account</a></p>
+              </form>
+            </div>
+          </div>
 
     </body>
 </html>
