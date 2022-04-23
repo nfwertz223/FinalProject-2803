@@ -7,7 +7,7 @@ function matchPassword() {
       alert("Passwords did not match "); 
       return false;
     } else {  
-      if (validPassword(document.getElementById("userR"),p1)) {
+      if (validInfo(document.getElementById("userR"),p1)) {
         alert("Password created successfully"); 
         return true; 
       }
@@ -15,11 +15,13 @@ function matchPassword() {
     }  
 }
 
-function validPassword(username, password) {
+function validInfo(username, password) {
   //check database for username/password, return true if database does not contain either, false otherwise
 
 }
 
-function loginVerif(username, password) {
+function validUser(username, password) {
   //check if username and password match to an account in the database, true if yes, false if no
 }
+
+//ENCRYPTION****
