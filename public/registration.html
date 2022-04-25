@@ -7,8 +7,8 @@
         <script src="registration.js" defer></script>
     </head>
     <body>
-        <p>Please fill out the information below to register:</p>
-        <form>
+        <p class="topmes">Please fill out the information below to register:</p>
+        <form class="form">
             <div>
                 <label for="username">Username:</label>
                 <input type="text" name="username" id="username">
@@ -24,10 +24,11 @@
             <div>
               <input type="submit" value="Register" id="register">  
             </div>
+            <p hidden id="message"></p>
+            <p><a href="/">Return to login page.</a></p>
         </form>
 
-        <p hidden id="message"></p>
-        <p><a href="/">Return to login page.</a></p>
+        
         
     </body>
 </html>

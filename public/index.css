@@ -53,9 +53,14 @@
   color: #b3b3b3;
   font-size: 12px;
 }
-.form .message a {
-  color: rgb(55, 150, 227);
-  text-decoration: none;
+
+.logbut:hover{
+  background-color: lavender;
+}
+
+.topmes {
+  text-align: center;
+  font-size: larger;
 }
 
 .container {
@@ -90,6 +95,9 @@
 }
 .container .info span .fa {
   color: #EF3B3A;
+}
+.mes {
+  text-align: center;
 }
 body {
   background: rgb(55, 150, 227);
