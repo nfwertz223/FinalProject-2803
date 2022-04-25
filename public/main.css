@@ -31,6 +31,24 @@ body {
 		background: #a981d4;
 	}
 }
+
+@keyframes colorPalette {
+	0% {
+		color: rgb(55, 150, 227);
+	}
+	25% {
+		color: rgb(101, 169, 224);
+	}
+	50% {
+		color: #95bdde;
+	}
+	75% {
+		color: #c6a1ed;
+	}
+	100% {
+		color: #a981d4;
+	}
+}
   
 .topnav {
     background-color: #ddd;
@@ -50,6 +68,12 @@ body {
     text-decoration: none;
     font-size: 25px;
     display: block;
+
+    animation-name: colorPalette;
+	  animation-duration: 5s;
+	  animation-iteration-count: infinite;
+	  animation-direction: alternate;
+	  animation-timing-function: linear;
 }
     
     /* Change the color of links on hover */
