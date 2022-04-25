@@ -12,7 +12,11 @@ const conn = mysql.createConnection({
     host: "localhost",
     user: "root",
 <<<<<<< HEAD
+<<<<<<< HEAD
     password: "Gboymysweetdog1",
+=======
+    password: "austinrowland",
+>>>>>>> austin
 =======
     password: "austinrowland",
 >>>>>>> austin
