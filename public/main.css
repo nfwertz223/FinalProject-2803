@@ -1,7 +1,36 @@
-/* Add a black background color to the top navigation */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+
 body {
-    background-color: rgb(55, 150, 227)
-  }
+  background: rgb(55, 150, 227);
+  font-family: "Roboto", sans-serif;
+
+	animation-name: backgroundColorPalette;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear; 
+	/* linear is enabled default, it’s not necessary to add it make it work but it can make your code more expressive */
+}
+
+@keyframes backgroundColorPalette {
+	0% {
+		background: rgb(55, 150, 227);
+	}
+	25% {
+		background: rgb(101, 169, 224);
+	}
+	50% {
+		background: #95bdde;
+	}
+	75% {
+		background: #c6a1ed;
+	}
+	100% {
+		background: #a981d4;
+	}
+}
   
 .topnav {
     background-color: #ddd;
