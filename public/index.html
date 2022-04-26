@@ -9,26 +9,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <body>
         <div class="login-page">
-            <form method="POST" action="/attempt_login" class = "login-form">
+            <form method="POST" action="/attempt_login" class = "form">
                 <div>
                     <label for="username">Username:</label>
-                    <input type="text" name="username" id="username" placeholder="username">
+                    <input type="text" name="username" id="username" placeholder="Username">
                 </div>
                 <div class="password">
                     <label for="password">Password:</label>
-                    <input type="password" name="password", id="password" placeholder="password">
+                    <input type="password" name="password", id="password" placeholder="Password">
                 </div>
                 <div>
-                    <input type="submit" value="login" id="login">
+                    <input type="submit" value="Login" id="login" class="logbut">
                 </div>
+                <div>
+                    <p>Not a user? <a href="registration">Register here</a></p>
+                </div>
+                <div>
+                    <p><a href="main">Main Page</a></p>
+                </div>
+                <p hidden id="message" class="mes"></p>
             </form>
-            <p hidden id="message"></p>
-        <div>
-            <p>Not a user? <a href="registration">Register here</a></p>
-        </div>
-        <div>
-            <p><a href="main">Main Page</a></p>
-        </div>
+            
+        
         </div>
         
         

@@ -3,8 +3,8 @@
 <title>Game</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="main.css" type="text/css"/>
-<script src="regist.js"></script>
+<link rel="stylesheet" href="game.css" type="text/css"/>
+<script src="game.js"></script>
     <body>
         <div class="topnav">
             <a href="main.html">Home</a>
@@ -13,8 +13,17 @@
         </div>
 
         <div class="gridwrapper">
-            <div class="gridone">One</div>
-            <div class="gridtwo">Two</div>
+            <div class="gridone">
+                <button class="genfact" onclick="generate()"> Generate a Fact</button>
+            </div>
+            <div class="gridtwo">
+                <header>
+                    <h1 style="text-align: center; text-decoration: underline;">Your Fun Fact</h1>
+                    <p id="fact">
+
+                    </p>
+                </header>
+            </div>
         </div>
     </body>
 </html>

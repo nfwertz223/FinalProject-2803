@@ -1,0 +1,138 @@
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+
+body {
+  background: rgb(55, 150, 227);
+  font-family: "Roboto", sans-serif;
+
+	animation-name: backgroundColorPalette;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear; 
+}
+
+
+@keyframes backgroundColorPalette {
+	0% {
+		background: rgb(55, 150, 227);
+	}
+	25% {
+		background: rgb(101, 169, 224);
+	}
+	50% {
+		background: #95bdde;
+	}
+	75% {
+		background: #c6a1ed;
+	}
+	100% {
+		background: #a981d4;
+	}
+}
+
+@keyframes colorPalette {
+	0% {
+		color: rgb(55, 150, 227);
+	}
+	25% {
+		color: rgb(101, 169, 224);
+	}
+	50% {
+		color: #95bdde;
+	}
+	75% {
+		color: #c6a1ed;
+	}
+	100% {
+		color: #a981d4;
+	}
+}
+  
+.topnav {
+    background-color: #ddd;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+    
+    /* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: rgb(55, 150, 227);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+
+    animation-name: colorPalette;
+	  animation-duration: 5s;
+	  animation-iteration-count: infinite;
+	  animation-direction: alternate;
+	  animation-timing-function: linear;
+}
+    
+    /* Change the color of links on hover */
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    /* Add a color to the active/current link */
+    .topnav a.active {
+      background-color: #ddd;
+      color: black;
+    }
+  
+    .gridwrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-auto-rows: minmax(200px, auto);
+      grid-gap: 20px;
+      justify-items: stretch;
+      padding: 70px;
+    }
+  
+    .gridwrapper > div {
+      background-color: #eee;
+    }
+  
+    .gridone {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+      }
+    
+    .gridtwo {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+    .genfact {
+      background-color: rgb(55, 150, 227);
+      border: none;
+      color: white;
+      padding: 35px 60px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 24px;
+      position: absolute;
+      left: 105px;
+      top: 350px;
+    }
+    .genfact:hover {
+      background-color: rgb(25, 113, 185);
+    }
+    .fact {
+      text-align: center;
+      padding-top: 60px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }

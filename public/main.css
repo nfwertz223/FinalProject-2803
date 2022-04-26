@@ -1,7 +1,54 @@
-/* Add a black background color to the top navigation */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+
 body {
-    background-color: rgb(55, 150, 227)
-  }
+  background: rgb(55, 150, 227);
+  font-family: "Roboto", sans-serif;
+
+	animation-name: backgroundColorPalette;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear; 
+	/* linear is enabled default, it’s not necessary to add it make it work but it can make your code more expressive */
+}
+
+@keyframes backgroundColorPalette {
+	0% {
+		background: rgb(55, 150, 227);
+	}
+	25% {
+		background: rgb(101, 169, 224);
+	}
+	50% {
+		background: #95bdde;
+	}
+	75% {
+		background: #c6a1ed;
+	}
+	100% {
+		background: #a981d4;
+	}
+}
+
+@keyframes colorPalette {
+	0% {
+		color: rgb(55, 150, 227);
+	}
+	25% {
+		color: rgb(101, 169, 224);
+	}
+	50% {
+		color: #95bdde;
+	}
+	75% {
+		color: #c6a1ed;
+	}
+	100% {
+		color: #a981d4;
+	}
+}
   
 .topnav {
     background-color: #ddd;
@@ -21,6 +68,12 @@ body {
     text-decoration: none;
     font-size: 25px;
     display: block;
+
+    animation-name: colorPalette;
+	  animation-duration: 5s;
+	  animation-iteration-count: infinite;
+	  animation-direction: alternate;
+	  animation-timing-function: linear;
 }
     
     /* Change the color of links on hover */
@@ -39,9 +92,9 @@ body {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-auto-rows: minmax(200px, auto);
-      grid-gap: 5px;
+      grid-gap: 20px;
       justify-items: stretch;
-      padding: 50px;
+      padding: 70px;
     }
   
     .gridwrapper > div {
@@ -50,13 +103,13 @@ body {
   
     .gridone {
         grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 4;
       }
     
     .gridtwo {
-        grid-column-start: 2;
+        grid-column-start: 3;
         grid-column-end: 4;
         grid-row-start: 1;
         grid-row-end: 4;

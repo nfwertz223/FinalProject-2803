@@ -7,27 +7,28 @@
         <script src="registration.js" defer></script>
     </head>
     <body>
-        <p>Please fill out the information below to register:</p>
-        <form>
+        <p class="topmes">Please fill out the information below to register:</p>
+        <form class="form">
             <div>
                 <label for="username">Username:</label>
-                <input type="text" name="username" id="username">
+                <input type="text" name="username" id="username" placeholder="Username">
             </div>
             <div>
                 <label for="password">Password:</label>
-                <input type="password" name="password" id="password" placeholder="password">
+                <input type="password" name="password" id="password" placeholder="Password">
             </div>
             <div>
                 <label for="confirm_password">Confirm Password:</label>
-                <input type="password" name="confirm_password" id="confirm_password" placeholder="confirm password">
+                <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm password">
             </div>
             <div>
-              <input type="submit" value="Register" id="register">  
+              <input type="submit" value="Register" id="register" class="logbut">  
             </div>
+            <p hidden id="message"></p>
+            <p><a href="/">Return to login page.</a></p>
         </form>
 
-        <p hidden id="message"></p>
-        <p><a href="/">Return to login page.</a></p>
+        
         
     </body>
 </html>
