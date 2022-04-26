@@ -11,8 +11,8 @@ body {
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 	animation-timing-function: linear; 
-	/* linear is enabled default, it’s not necessary to add it make it work but it can make your code more expressive */
 }
+
 
 @keyframes backgroundColorPalette {
 	0% {
@@ -103,9 +103,9 @@ body {
   
     .gridone {
         grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 4;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
       }
     
     .gridtwo {
@@ -113,4 +113,26 @@ body {
         grid-column-end: 4;
         grid-row-start: 1;
         grid-row-end: 4;
+    }
+    .genfact {
+      background-color: rgb(55, 150, 227);
+      border: none;
+      color: white;
+      padding: 35px 60px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 24px;
+      position: absolute;
+      left: 105px;
+      top: 350px;
+    }
+    .genfact:hover {
+      background-color: rgb(25, 113, 185);
+    }
+    .fact {
+      text-align: center;
+      padding-top: 60px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
