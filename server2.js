@@ -69,6 +69,12 @@ app.post("/register", function(req, res){
                             res.json({success: true, message: "User registered"})
                         }
                     })
+                    insertUsername = "insert into userScores values(?, ?)"
+                    conn.query(insertUsername, [req.body.username, 0], function(err, rows){
+                        if (err){
+                            res.json({success: false, message: "Server error"})
+                        }
+                    })
                 }
             });
 })
@@ -85,6 +91,7 @@ app.post("/attempt_login", function(req, res){
             if (bcrypt.compareSync(req.body.password, storedPassword)){
                 authenticated = true;
                 res.json({success: true, message: "Logged in. Hit Main Page to proceed."})
+                currentUser = req.body.username;
             }else{
                 res.json({success: false, message:"Password is incorrect. Try again."})
             }
@@ -99,7 +106,6 @@ app.get("/main", function(req, res){
     }else{
         res.send("<p>Not logged in <p><a href='/'>login page</a>")
     }
-    
 })
 
 // Start the web server
