@@ -76,8 +76,8 @@ app.post("/register", function(req, res){
 // post to route "attempt login"
 app.post("/attempt_login", function(req, res){
     // we check for the username and password to match.
-    conn.query("select password from registeredusers where username = ?", [req.body.username], function (err, rows){
-        if(err){
+    conn.query("select password from registeredUsers where username = ?", [req.body.username], function (err, rows){
+        if(err || rows.length == 0){
             res.json({success: false, message: "User doesn't exist. Register an account."});
         }else{
             storedPassword = rows[0].password // rows is an array of objects e.g.: [ { password: '12345' } ]
