@@ -1,6 +1,7 @@
 let loginButton = document.getElementById("login")
 let username = document.getElementById("username")
 let password = document.getElementById("password")
+var currentUser = username;
 
 function login(event){
     event.preventDefault()
@@ -23,7 +24,7 @@ function responseHandler(){
     let message = document.getElementById("message")
     message.style.display = "block"
     if (this.response.success){    
-        message.innerText = this.response.message
+        message.innerText = this.response.message;
     }else{
         console.log(this.response.success)
         message.innerText = this.response.message

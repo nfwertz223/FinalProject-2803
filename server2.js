@@ -91,7 +91,6 @@ app.post("/attempt_login", function(req, res){
             if (bcrypt.compareSync(req.body.password, storedPassword)){
                 authenticated = true;
                 res.json({success: true, message: "Logged in. Hit Main Page to proceed."})
-                currentUser = req.body.username;
             }else{
                 res.json({success: false, message:"Password is incorrect. Try again."})
             }
