@@ -1,5 +1,7 @@
 function generate() {
+    
     const data = null;
+    alert(currentUser);
 
     const xhr = new XMLHttpRequest();
     xhr.withCredentials = true;
@@ -11,22 +13,25 @@ function generate() {
         }
     });
 
-    xhr.open("GET", "https://matchilling-chuck-norris-jokes-v1.p.rapidapi.com/jokes/random?category=movie");
+    xhr.open("GET", "https://matchilling-chuck-norris-jokes-v1.p.rapidapi.com/jokes/random?category=food");
     xhr.setRequestHeader("accept", "application/json");
     xhr.setRequestHeader("X-RapidAPI-Host", "matchilling-chuck-norris-jokes-v1.p.rapidapi.com");
     xhr.setRequestHeader("X-RapidAPI-Key", "dd12ef4b37msheecbd0ae22a6a5fp1baa2ajsn068e5a27914f");
 
     xhr.send(data);
+    
+}
 
-    get = "select into registeredUsers values(?, ?)"
-    conn.query(insertUser, [req.body.username, passwordHash], function(err, rows){
+function update() {
+
+    getNum = "select * from userScores where username='" + currentUser + "'";
+    conn.query(getNum, function(err, rows){
         if (err){
             res.json({success: false, message: "Server error"})
         }
         else{
-            res.json({success: true, message: "User registered"})
+            console.log(rows[0].numFacts);
+            console.log("good");
         }
     })
 }
-
-document.getElementById("generate").addEventListener("click", generate());
