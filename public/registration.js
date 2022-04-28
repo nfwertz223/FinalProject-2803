@@ -20,7 +20,7 @@ function register(event){
         // this is to prevent the data from being easily sniffed
         xhr.send(query)
     }
-    else{
+    else {
         message.style.display = "block"
         message.innerText = "passwords don't match"
     }
