@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Leaderboard</title>
+<title>Game</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="main.css" type="text/css"/>
+<link rel="stylesheet" href="leaderboard.css" type="text/css"/>
+<script src="game.js"></script>
+<script src="leaderboard.js"></script>
+
+
+
     <body>
         <div class="topnav">
             <a href="main.html">Home</a>
-            <a href="game.html">Game</a>
-            <a class="active" href="leaderboard.html">Leaderboard</a>
+            <a class="active" href="game.html">Game</a>
+            <a href="leaderboard.html">History</a>
         </div>
 
-        <div class="gridwrapper">
-            <div class="gridone">One</div>
-            <div class="gridtwo">Two</div>
+        <div class="flexwrapper">
+            <div class="flexone">
+                <button class="genlist" onclick="printJokes()">View Your Joke History</button>
+            </div>
+            <div class="flextwo">
+                <header>
+                    <h1 style="text-align: center; text-decoration: underline;">Your Past Jokes</h1>
+                    <div class="jokes" id="jokes"></div>
+                </header>
+            </div>
         </div>
     </body>
 </html>

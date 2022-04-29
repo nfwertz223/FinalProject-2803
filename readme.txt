@@ -6,8 +6,7 @@ create database project;
 use project;
 create table registeredUsers(
     username varchar(60) primary key,
-    password varchar(60) not null,
-    numfacts int default '0'
+    password varchar(60) not null
 )
 
 Don't forget to use npm install to install all dependencies

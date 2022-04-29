@@ -36,5 +36,5 @@ function responseHandler(){
         message.innerText = this.response.message
     }
 }
-console.log(username)
+
 registerButton.addEventListener("click", register)
