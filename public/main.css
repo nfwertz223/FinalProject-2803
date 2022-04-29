@@ -94,10 +94,12 @@ body {
       padding: 70px;
       flex-basis: auto;
       column-gap: 20px;
+      
     }
 
     .flexone {
       background-color: white;
+      border-radius: 4px;
     }
 
     @media (max-width: 800px) {
