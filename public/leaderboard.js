@@ -1,5 +1,5 @@
 function printJokes() {
-    pastJokes = localStorage.getItem("pastJokes");
+    pastJokes = sessionStorage.getItem("pastJokes");
     if (pastJokes === null) {
         pastJokes = [];
     } else {

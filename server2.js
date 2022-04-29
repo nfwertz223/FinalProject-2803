@@ -69,12 +69,6 @@ app.post("/register", function(req, res){
                             res.json({success: true, message: "User registered"})
                         }
                     })
-                    insertUsername = "insert into userScores values(?, ?)"
-                    conn.query(insertUsername, [req.body.username, 0], function(err, rows){
-                        if (err){
-                            res.json({success: false, message: "Server error"})
-                        }
-                    })
                 }
             });
 })

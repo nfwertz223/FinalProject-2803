@@ -9,14 +9,14 @@ function generate() {
         if (this.readyState === this.DONE) {
             document.getElementById("fact").innerHTML = JSON.parse(this.responseText).value;
 
-            pastJokes = localStorage.getItem("pastJokes");
+            pastJokes = sessionStorage.getItem("pastJokes");
             if (pastJokes === null) {
                 pastJokes = [];
             } else {
                 pastJokes = JSON.parse(pastJokes);
             }
             pastJokes.push(JSON.parse(this.responseText).value);
-            localStorage.setItem("pastJokes", JSON.stringify(pastJokes))
+            sessionStorage.setItem("pastJokes", JSON.stringify(pastJokes))
         }
     });
 
